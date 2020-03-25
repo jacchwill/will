@@ -29,6 +29,6 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: install
       run: |
-        pip install -r requirements.txt,
+        pip install -r "requirements.txt",
         gunicorn app:app -b 127.0.0.1:8000 --reload --max-requests 1 --access-logfile=- --error-logfile=-,
         echo test, and deploy your project.
