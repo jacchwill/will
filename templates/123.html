@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/style-red.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style-blue.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style-yellow.css')}}">
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        
+        $(".one").on("click",function(){
+          $(".go").html($(this).html())
+        });
+        $(".tho").on("click",function(){
+          $(".go").html($(this).html())
+        });
+        $(".three").on("click",function(){
+          $(".go").html($(this).html())
+        });
 
+     });
+    </script>
+   <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
 </head>
 <body>
   <header>
@@ -49,16 +70,43 @@
   </nav>
 </header>
     <main>
-        <img src="{{url_for('static',filename='ww.jpg')}}" alt="">
+      <div class="go">0</div>
+      <div class="one">will</div>
+      <div class="tho">2</div>
+      <div class="three">3</div>
+      石 魚 湖 ，	　似 洞 庭 ，
+夏 水 欲 滿 君 山 青 。	　山 為 樽 ，
+水 為 沼 ，	　酒 徒 歷 歷 坐 洲 鳥 。
+長 風 連 日 作 大 浪 ，	　不 能 廢 人 運 酒 舫 。
+我 持 長 瓢 坐 巴 邱 ，	　酌 飲 四 座 以 散 愁 。
+
+    <img src="{{url_for('static',filename='h.jpg')}}" alt="">
+    <script type="text/Javascript">
+
+             var name="jacch";
+      
+             document.write("Hello"+name);
+              var a="man";  
+              document.write("is"+a);
+              
+         </script>
+    
+       <script src="{{url_for('static',filename='js/hello.js')}}"></script>
+       <script src="{{url_for('static',filename='js/hello.js')}}"></script>
+       <script src="{{url_for('static',filename='js/hello.js')}}"></script>
     </main>
 
     <footer>
-        腳
+    作者：will
     </footer>
-    
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+  </head>6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+</body> 
 </html>
+nav
