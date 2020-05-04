@@ -18,6 +18,15 @@ def picture():
 def blog():
     return render_template ("blog.html")
 
+@app.route('/給麵之人')
+def To_the_person():
+    return render_template ("To_the_person.html")
+
+@app.route('/undertale')
+def undertale():
+    return render_template ("undertale.html")
+
+
 @app.route('/hello')
 def hea():
     a = request.args.get("a",0)
