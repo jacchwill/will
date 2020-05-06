@@ -26,6 +26,10 @@ def To_the_person():
 def undertale():
     return render_template ("undertale.html")
 
+@app.route('/鬼滅之刃')
+def Demon_Blade():
+    return render_template ("Demon_Blade.html")
+
 
 @app.route('/hello')
 def hea():
