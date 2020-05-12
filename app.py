@@ -30,6 +30,10 @@ def undertale():
 def Demon_Blade():
     return render_template ("Demon_Blade.html")
 
+@app.route('/choco')
+def chocolate():
+    return render_template ("chocolate.html")
+
 
 @app.route('/hello')
 def hea():
