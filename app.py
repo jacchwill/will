@@ -40,3 +40,7 @@ def hea():
     a = request.args.get("a",0)
     b = request.args.get("b",0)
     return render_template ("index.html",a=a,b=b)
+
+@app.route('/Minecraft')
+def Minecraft():
+    return render_template ("Minecraft.html")
