@@ -44,3 +44,9 @@ def hea():
 @app.route('/Minecraft')
 def Minecraft():
     return render_template ("Minecraft.html")
+
+@app.route('/deltarune')
+def deltarune():
+    a = request.args.get("a",0)
+    b = request.args.get("b",0)
+    return render_template ("deltarune.html",a=a,b=b)
