@@ -50,3 +50,9 @@ def deltarune():
     a = request.args.get("a",0)
     b = request.args.get("b",0)
     return render_template ("deltarune.html",a=a,b=b)
+
+@app.route('/Glitchtale')
+def Glitchtale():
+    a = request.args.get("a",0)
+    b = request.args.get("b",0)
+    return render_template ("Glitchtale.html",a=a,b=b)
