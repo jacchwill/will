@@ -62,3 +62,10 @@ def Light():
     a = request.args.get("a",0)
     b = request.args.get("b",0)
     return render_template ("Light.html",a=a,b=b)
+
+@app.route('/Black_Plasma_Studios')
+def Black_Plasma_Studios():
+    a = request.args.get("a",0)
+    b = request.args.get("b",0)
+    return render_template ("Black_Plasma_Studios.html",a=a,b=b)
+    
