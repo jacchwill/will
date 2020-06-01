@@ -75,3 +75,27 @@ def fan():
     b = request.args.get("b",0)
     return render_template ("fan/index.html",a=a,b=b)
 
+@app.route('/candy')
+def candy():
+    a = request.args.get("a",0)
+    b = request.args.get("b",0)
+    return render_template ("candy/index.html",a=a,b=b)
+
+@app.route('/cookie')
+def cookie():
+    a = request.args.get("a",0)
+    b = request.args.get("b",0)
+    return render_template ("cookie/index.html",a=a,b=b)
+
+@app.route('/cookie1')
+def cookie1():
+    a = request.args.get("a",0)
+    b = request.args.get("b",0)
+    return render_template ("cookie1/index.html",a=a,b=b)
+
+@app.route('/bread')
+def bread():
+    a = request.args.get("a",0)
+    b = request.args.get("b",0)
+    return render_template ("bread/index.html",a=a,b=b)
+
