@@ -1,4 +1,5 @@
 from flask import Flask, escape, request,render_template
+from jacchlibs.readxls import readxls
 
 app = Flask(__name__)
 
@@ -99,3 +100,14 @@ def bread():
     b = request.args.get("b",0)
     return render_template ("bread/index.html",a=a,b=b)
 
+
+@app.route('/master')
+def master():
+    a = request.args.get("a",0)
+    b = request.args.get("b",0)
+    xls=readxls("db.xlsx")
+    sheet=xls.read("皮卡丘")  
+    print (sheet["B1"].value)
+    print (sheet["A2"].value)
+    print (sheet["A3"].value)
+    return render_template ("master/index.html",a=a,b=b,master=sheet)
