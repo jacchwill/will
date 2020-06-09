@@ -111,3 +111,14 @@ def master():
     print (sheet["A2"].value)
     print (sheet["A3"].value)
     return render_template ("master/index.html",a=a,b=b,master=sheet)
+
+@app.route('/master2')
+def master2():
+    a = request.args.get("a",0)
+    b = request.args.get("b",0)
+    xls=readxls("db.xlsx")
+    sheet=xls.read("妙蛙種子")  
+    print (sheet["B1"].value)
+    print (sheet["A2"].value)
+    print (sheet["A3"].value)
+    return render_template ("master2/index.html",a=a,b=b,master=sheet)
