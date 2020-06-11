@@ -57,7 +57,7 @@
     <div class="container d-flex justify-content-between">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>口袋怪獸圖鑑</strong>
+        <strong>口袋怪獸圖鑑 {{ a }}</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -85,7 +85,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="{{url_for('static',filename='皮卡丘/'+(master["B3"].value))}}" width="100%" height="225" alt="">
+            <img src="{{url_for('static',filename=a+'/'+(master["B3"].value))}}" width="100%" height="225" alt="">
             <div class="card-body">
               <p class="card-text">{{master["B1"].value}}</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -100,7 +100,7 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="{{url_for('static',filename='皮卡丘/'+(master["C3"].value))}}" width="100%" height="225" alt="">
+            <img src="{{url_for('static',filename=a+'/'+(master["C3"].value))}}" width="100%" height="225" alt="">
             <div class="card-body">
               <p class="card-text">{{master["C1"].value}}</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -115,7 +115,7 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="{{url_for('static',filename='皮卡丘/'+(master["D3"].value))}}" width="100%" height="225" alt="">
+            <img src="{{url_for('static',filename=a+'/'+(master["D3"].value))}}" width="100%" height="225" alt="">
             <div class="card-body">
               <p class="card-text">{{master["D1"].value}}</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -131,7 +131,7 @@
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="{{url_for('static',filename='皮卡丘/'+(master["B4"].value))}}" width="100%" height="225" alt="">
+            <img src="{{url_for('static',filename=a+'/'+(master["B4"].value))}}" width="100%" height="225" alt="">
             <div class="card-body">
               <p class="card-text">{{master["B1"].value}}</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -146,7 +146,7 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="{{url_for('static',filename='皮卡丘/'+(master["C4"].value))}}" width="100%" height="225" alt="">
+            <img src="{{url_for('static',filename=a+'/'+(master["C4"].value))}}" width="100%" height="225" alt="">
             <div class="card-body">
               <p class="card-text">{{master["C1"].value}}</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -161,7 +161,7 @@
         </div>
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img src="{{url_for('static',filename='皮卡丘/'+(master["D4"].value))}}" width="100%" height="225" alt="">
+            <img src="{{url_for('static',filename=a+'/'+(master["D4"].value))}}" width="100%" height="225" alt="">
             <div class="card-body">
               <p class="card-text">{{master["D1"].value}}</p>
               <div class="d-flex justify-content-between align-items-center">
