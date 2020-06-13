@@ -107,10 +107,12 @@ def master():
     b = request.args.get("b",0)
     xls=readxls("db.xlsx")
     sheet=xls.read(a)  
+    sheetnames=xls.sheetnames()
+    print (sheetnames)
     print (sheet["B1"].value)
     print (sheet["A2"].value)
     print (sheet["A3"].value)
-    return render_template ("master/index.html",a=a,b=b,master=sheet)
+    return render_template ("master/index.html",a=a,b=b,master=sheet,l=sheetnames)
 
 #@app.route('/master2')
 #def master2():
